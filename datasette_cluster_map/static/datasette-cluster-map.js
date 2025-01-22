@@ -303,7 +303,7 @@ const addClusterMap = (latitudeColumn, longitudeColumn) => {
     maxClusterRadius: 50,
   });
   map.addLayer(markerClusterGroup);
-  let path = location.pathname + ".json" + location.search;
+  let path = "/sites/sites.json" + location.search;
   const qs = "_size=max&_labels=on&_extra=count&_extra=next_url&_shape=objects";
   if (path.indexOf("?") > -1) {
     path += "&" + qs;
