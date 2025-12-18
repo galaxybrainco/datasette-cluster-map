@@ -300,7 +300,7 @@ const addClusterMap = (latitudeColumn, longitudeColumn) => {
   el.parentNode.insertBefore(progressDiv, el.nextSibling);
   let markerClusterGroup = L.markerClusterGroup({
     chunkedLoading: true,
-    maxClusterRadius: 50,
+    maxClusterRadius: 20,
   });
   map.addLayer(markerClusterGroup);
   let path = "/sites/sites.json" + location.search;
